@@ -12,13 +12,12 @@ async def on_ready():
 
 @bot.command()
 async def manualidades(ctx):
-    ej = ["ladrillos ecologicos", "lapicero", "silla recicladora"]
+    ej = ["ladrillos ecologicos", "lapicero", "silla recicladora", "Una maceta "]
     await ctx.send(random.choice(ej))
 
 @bot.command()
 async def ideas(ctx):
-    id = ["usar botellas reciclables", "usar bolsas reutilizables", "dona lo que ya no usas."]
+    id = ["usar botellas reciclables", "usar bolsas reutilizables", "dona lo que ya no usas", "hacer compost"]
     await ctx.send(random.choice(id))
 
-
-bot.run("token")
+bot.run("tu token")
